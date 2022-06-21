@@ -1,8 +1,8 @@
 import smtplib
 
-server = smtplib.SMTP("emailserver.com", 465"""port number""")
+server = smtplib.SMTP("emailserver.com", 465) # SMTP server and port number
 
-server.startssl()
+server.starttls()
 
 server.login("sender@email.com", "email_password")
 
